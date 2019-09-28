@@ -106,7 +106,7 @@ select {
 
 .hero h1 {
   position:bottom;
-  margin-top: 200px;
+  margin-top: 300px;
   font-size: 0.1rem;
   animation: title 1.2s forwards linear;
 }
