@@ -27,7 +27,8 @@ tableData.forEach((datum) => {
   });
 });
 
-
+//**********************************************
+// Store values of date, city, state, country and shape in a list separately
 var dateList = [];
 var cityList = [];
 var stateList = [];
@@ -57,6 +58,7 @@ Object.entries(datum).forEach(([key, value]) =>{
 
 
 //  Get the four arrays with unique values
+// https://stackoverflow.com/questions/1960473/get-all-unique-values-in-a-javascript-array-remove-duplicates
 
 let unique_1 = [...new Set(dateList)]; 
 dateList = unique_1;
@@ -75,7 +77,8 @@ console.log(stateList);
 console.log(countryList);
 console.log(shapeList);
 
-
+// Create the dropdown list for five filters
+// Add all date options in dropdown list 
 d3.select("#datetime-filter")
   .selectAll("#add options")
   .data(dateList)
@@ -89,6 +92,7 @@ d3.select("#datetime-filter")
   })
   
  
+// Add all country options in dropdown list 
 d3.select("#country-filter")
   .selectAll("#add options")
   .data(countryList)
@@ -140,7 +144,7 @@ d3.select("#shape-filter")
     return d;
   });
 
-
+//**********************************************
 // filter function
 // Select the five filter input elements and get the values property of the input elements
 var selectDatevalue = " ";
@@ -218,6 +222,19 @@ filteredData.forEach((datum) => {
 
 
 var submit1 = d3.select("#reset-btn");
+
+// // create a function for resetting the table 
+// function resetData(){
+//   tbody.text("")
+//   loadData()
+//   }
+  
+// Add event handler for the reset button to reset the table to original data 
+// submit1.on("click",loadData)
+
+
+// submit1.on("click",loadtable);
+
 
 submit1.on("click", function() {
   //  Delete the previous html table rows 

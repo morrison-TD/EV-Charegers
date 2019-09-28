@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>UFO Finder</title>
+  <title>Electric vehicle Charging Stations</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/superhero/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
@@ -15,17 +15,17 @@
     <nav class="navbar navbar-default">
       <div class="container-fluid">
         <div class="navbar-header">
-          <a class="navbar-brand" href="index.html">UFO Sightings
-            <img class="nav-ufo" src="static/images/ufo.svg">
+          <a class="navbar-brand" href="index.html">Electric vehicle Charging Stations
+            <!--<img class="nav-ufo" src="static/images/ufo.svg">-->
           </a>
         </div>
       </div>
     </nav>
     <div class="hero text-center">
-      <h1>UFO Sightings</h1>
+      <h1>Electric vehicle Charging Stations</h1>
       <p>The Truth is Out There</p>
     </div>
-    <div class="container">
+   <div class="container">
       <div class="row margin-top-50">
         <div class="col-md-2">
           <aside class="filters">
@@ -36,16 +36,16 @@
                   <div class="form-group">
                     <ul class="list-group" id="filters">
 
-                      <!-- Choose a datetime-->
+                      Choose a Zipcode
                       <li class="filter list-group-item">
-                        <label for="date"> Choose a Date</label>
+                        <label for="date"> Zipcodes</label>
                           <select onchange="mydateFunction()" id="datetime-filter" >
-                            <option value="" hidden >Select a Date</option>
+                            <option value="" hidden >Select a Zipcode</option>
                             <option id="add options" hidden value="1/1/2010" >1/1/2010</option>
                               </select>
                         </li>
 
-                      <!-- Choose a country -->
+                       Choose a city 
                       <li class="filter list-group-item">
                         <label for="country">Choose a Country</label>
                           <select onchange="mycountryFunction()" id="country-filter" >
@@ -54,7 +54,7 @@
                               </select>
                         </li>
 
-                      <!-- choose a state -->
+                       choose a state 
                       <li class="filter list-group-item">
                         <label for="state">Choose a State</label>
                         <select onchange="mystateFunction()" id="state-filter" >
@@ -63,7 +63,7 @@
                             </select>
                         </li>
 
-                      <!-- choose a city -->
+                       choose a city 
                       <li class="filter list-group-item">
                         <label for="city">Choose a City</label>
                           <select onchange="mycityFunction()" id="city-filter" >
@@ -72,7 +72,7 @@
                               </select>
                         </li>
 
-                      <!-- choose a shape -->
+                       choose a shape 
                       <li class="filter list-group-item">
                         <label for="shape">Enter a Shape</label>
                           <select onchange="myshapeFunction()" id="shape-filter">
@@ -117,8 +117,8 @@
     </footer>
   </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
-  <!-- <script src="{{ url_for('static', filename='js/data.js') }}"></script> 
-  <script src="{{ url_for('static', filename='js/app.js') }}"></script>  -->
+   <script src="{{ url_for('static', filename='js/data.js') }}"></script> 
+  <script src="{{ url_for('static', filename='js/app.js') }}"></script>  
   <script src="static/js/data.js"></script> 
   <script src="static/js/app.js"></script> 
 </body>
