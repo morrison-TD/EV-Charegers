@@ -11,6 +11,7 @@
 </head>
 
 <body>
+<<<<<<< HEAD
   <!--NavBar-->
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <a class="navbar-brand" href="#">Navbar</a>
@@ -39,6 +40,16 @@
             </div>
           </li>
         </ul>
+=======
+  <div class="wrapper">
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="index.html">Electric vehicle Charging Stations
+            
+          </a>
+        </div>
+>>>>>>> 71452fb932ff04517c5ba38b84db9ec4344f872e
       </div>
     </nav>
    <!--end nav section-->
@@ -62,25 +73,6 @@
                         <label for="date"> Zipcodes</label>
                           <select onchange="mydateFunction()" id="datetime-filter" >
                             <option value="" hidden >Select a Zipcode</option>
-                            <option id="add options" hidden value="1/1/2010" >1/1/2010</option>
-                              </select>
-                        </li>
-
-                       Choose a city 
-                      <li class="filter list-group-item">
-                        <label for="country">Choose a Country</label>
-                          <select onchange="mycountryFunction()" id="country-filter" >
-                            <option value="" hidden >Select a Country</option>
-                            <option id="add options" hidden value="us" >us</option>                            
-                              </select>
-                        </li>
-
-                       choose a state 
-                      <li class="filter list-group-item">
-                        <label for="state">Choose a State</label>
-                        <select onchange="mystateFunction()" id="state-filter" >
-                          <option value="" hidden>Select a State</option>
-                          <option id="add options" hidden  value="ar" >ar</option>
                             </select>
                         </li>
 
@@ -89,19 +81,9 @@
                         <label for="city">Choose a City</label>
                           <select onchange="mycityFunction()" id="city-filter" >
                             <option value="" hidden > Select a City </option>
-                            <option id="add options" hidden value="benton" >benton</option>
+                            <option id="add options" hidden value="" ></option>
                               </select>
                         </li>
-
-                       choose a shape 
-                      <li class="filter list-group-item">
-                        <label for="shape">Enter a Shape</label>
-                          <select onchange="myshapeFunction()" id="shape-filter">
-                            <option value=""hidden >Select a Shape</option>
-                            <option id="add options" hidden value="circle" >circle</option>
-                              </select>
-                        </li>
-                    </ul>
 
                     
                   </div>
@@ -113,7 +95,7 @@
             </div>
           </aside>
         </div>
-        <div class="col-md-10">
+        <!--<div class="col-md-10">
           <div id="table-area" class="">
             <table id="ufo-table" class="table table-striped">
               <thead style="text-align:center;">
@@ -136,12 +118,12 @@
     <footer class="footer">
       <span class="bottom">UFO Sightings</span>
     </footer>
-  </div>
+  </div>-->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
    <script src="{{ url_for('static', filename='js/data.js') }}"></script> 
   <script src="{{ url_for('static', filename='js/app.js') }}"></script>  
-  <script src="static/js/data.js"></script> 
-  <script src="static/js/app.js"></script> 
+ <!-- <script src="static/js/data.js"></script> 
+  <script src="static/js/app.js"></script>--> 
 </body>
 
 </html>
