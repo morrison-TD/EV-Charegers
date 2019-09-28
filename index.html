@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>UFO Finder</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/superhero/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+  <link rel="stylesheet" href="static/style.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="index.html">UFO Sightings
+            <img class="nav-ufo" src="static/images/ufo.svg">
+          </a>
+        </div>
+      </div>
+    </nav>
+    <div class="hero text-center">
+      <h1>UFO Sightings</h1>
+      <p>The Truth is Out There</p>
+    </div>
+    <div class="container">
+      <div class="row margin-top-50">
+        <div class="col-md-2">
+          <aside class="filters">
+            <div class="panel panel-default">
+              <div class="panel-heading">Filter Search</div>
+              <div class="panel-body">
+                <form >
+                  <div class="form-group">
+                    <ul class="list-group" id="filters">
+
+                      <!-- Choose a datetime-->
+                      <li class="filter list-group-item">
+                        <label for="date"> Choose a Date</label>
+                          <select onchange="mydateFunction()" id="datetime-filter" >
+                            <option value="" hidden >Select a Date</option>
+                            <option id="add options" hidden value="1/1/2010" >1/1/2010</option>
+                              </select>
+                        </li>
+
+                      <!-- Choose a country -->
+                      <li class="filter list-group-item">
+                        <label for="country">Choose a Country</label>
+                          <select onchange="mycountryFunction()" id="country-filter" >
+                            <option value="" hidden >Select a Country</option>
+                            <option id="add options" hidden value="us" >us</option>                            
+                              </select>
+                        </li>
+
+                      <!-- choose a state -->
+                      <li class="filter list-group-item">
+                        <label for="state">Choose a State</label>
+                        <select onchange="mystateFunction()" id="state-filter" >
+                          <option value="" hidden>Select a State</option>
+                          <option id="add options" hidden  value="ar" >ar</option>
+                            </select>
+                        </li>
+
+                      <!-- choose a city -->
+                      <li class="filter list-group-item">
+                        <label for="city">Choose a City</label>
+                          <select onchange="mycityFunction()" id="city-filter" >
+                            <option value="" hidden > Select a City </option>
+                            <option id="add options" hidden value="benton" >benton</option>
+                              </select>
+                        </li>
+
+                      <!-- choose a shape -->
+                      <li class="filter list-group-item">
+                        <label for="shape">Enter a Shape</label>
+                          <select onchange="myshapeFunction()" id="shape-filter">
+                            <option value=""hidden >Select a Shape</option>
+                            <option id="add options" hidden value="circle" >circle</option>
+                              </select>
+                        </li>
+                    </ul>
+
+                    
+                  </div>
+                  <button id="filter-btn" type="submit"  class="btn btn-default">Filter Table</button>
+                  <button id="reset-btn" type="reset" class="btn btn-default">Select Again</button>
+                  
+               </form>
+              </div>
+            </div>
+          </aside>
+        </div>
+        <div class="col-md-10">
+          <div id="table-area" class="">
+            <table id="ufo-table" class="table table-striped">
+              <thead style="text-align:center;">
+                <tr >
+                  <th class="table-head">Date</th>
+                  <th class="table-head">City</th>
+                  <th class="table-head">State</th>
+                  <th class="table-head">Country</th>
+                  <th class="table-head">Shape</th>
+                  <th class="table-head">Duration</th>
+                  <th class="table-head">Comments</th>
+                </tr>
+              </thead>
+              <tbody style="text-align:center;"></tbody> 
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <span class="bottom">UFO Sightings</span>
+    </footer>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
+  <!-- <script src="{{ url_for('static', filename='js/data.js') }}"></script> 
+  <script src="{{ url_for('static', filename='js/app.js') }}"></script>  -->
+  <script src="static/js/data.js"></script> 
+  <script src="static/js/app.js"></script> 
+</body>
+
+</html>
