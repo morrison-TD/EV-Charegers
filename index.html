@@ -1,45 +1,49 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-  <meta charset="utf-8">
-  <title>Electric vehicle Charging Stations</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/superhero/bootstrap.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
-  <link rel="stylesheet" href="static/style.css">
-</head>
-
-<body>
-    <nav class="navbar navbar-default">
+  <head>
+    <meta charset="utf-8">
+    <title>EV Charging Stations</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/superhero/bootstrap.min.css">
+    <link rel="stylesheet" href="https://bootswatch.com/4/lux/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <link rel="stylesheet" href="static/style.css">
+  </head>
+  
+  <body>
+    <div class="wrapper">
+      <nav class="navbar navbar-default">
         <div class="container-fluid">
-          
-    
           <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-            <a class="navbar-brand" href="index.html">HOME</a>
+            <a class="navbar-brand" href="index.html">SUPERCHARGE ME!
+              
+            </a>
           </div>
-    
-          <!-- Collect the nav links, forms, and other content for toggling -->
-          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-              <ul class="nav navbar-nav navbar-right">
-                <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">PLOTS<span class="caret"></span></a>
-                  <ul class="dropdown-menu"></ul>
-              <li><a href="mission.html">MISSION</a></li>
-              <li><a href="time.html">ADDITIONAL DATA</a></li></ul>
+        </div>
+      </nav>
 
+    <!-- start of nav bar -->
 
-          </div></nav>
-   <!--end nav section-->
+    <ul class="nav nav-tabs">
+      <li class="nav-item">
+        <a class="nav-link active" data-toggle="tab" href="./index.html">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" href="./mission.html">Our Mission</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" href="./time.html">Data</a>
+      </li>
+    </ul>
+
+     <!-- end of nav bar -->
+
+   
+
     <div class="hero text-center">
-      <h1>ELECTRIC VEHICLE CHARGING STATION</h1>
-      <p>FIND A CHARGING STATION NEAR YOU!</p>
+      <h1>Electric vehicle Charging Stations</h1>
+
     </div>
 
    <div class="container">
@@ -55,15 +59,15 @@
 
                       Choose a Zipcode
                       <li class="filter list-group-item">
-                        
-                          <select onchange="myzipFunction()" id="zip-filter" >
+                        <label for="date"> Zipcodes</label>
+                          <select onchange="mydateFunction()" id="datetime-filter" >
                             <option value="" hidden >Select a Zipcode</option>
                             </select>
                         </li>
 
-                       Choose a city 
+                       choose a city 
                       <li class="filter list-group-item">
-                        
+                        <label for="city">Choose a City</label>
                           <select onchange="mycityFunction()" id="city-filter" >
                             <option value="" hidden > Select a City </option>
                             <option id="add options" hidden value="" ></option>
@@ -99,12 +103,13 @@
         </div>
       </div>
     </div>
-    
+    <footer class="footer">
       <span class="bottom">Electric Charging Stations</span>
     </footer>
   </div>
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
-   <script src="{{ url_for('static', filename='js/data.js') }}"></script> 
+   <script src="{{ url_for('static', filename='js/main.js') }}"></script> 
   <script src="{{ url_for('static', filename='js/app.js') }}"></script>  
  <!-- <script src="static/js/data.js"></script> 
   <script src="static/js/app.js"></script>--> 
