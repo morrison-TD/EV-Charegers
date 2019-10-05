@@ -1,4 +1,4 @@
-station_name,street_address,city,ctate,ZIP,latitude,longitude,country
+Station_Name,Street_Address,City,State,ZIP,Latitude,Longitude,Country
 City of Sacramento - Capitol Parking Garage,1015 L St,Sacramento,CA,95814,38.5783802,-121.4926,US
 Los Angeles Convention Center,1201 S Figueroa St,Los Angeles,CA,90015,34.04057,-118.268762,US
 LADWP - John Ferraro Building,111 N Hope St,Los Angeles,CA,90012,34.057922,-118.2498,US
@@ -13154,7 +13154,7 @@ UCSD,2285 Downwind Way,San Diego,CA,92037,32.8662589,-117.2492015,US
 UCSD,9210 La Jolla Shores Dr,San Diego,CA,92037,32.8701158,-117.2517779,US
 E CAR,1718 Oak Ave,Evanston,IL,60201,42.0492638,-87.6870857,US
 SALEM BMW,1151 Van Ness Ave NE,Salem,OR,97301,44.9717507,-123.0195577,US
-Greenlots - 1606227,Test,Test,CA,TEST,33.26504135,-115.9247208,US
+Greenlots - 1606227,Test,Test,CA,,33.26504135,-115.9247208,US
 Greenlots - 112134U,2727 SE Raymond Street,Portland,OR,97202,45.48722458,-122.6384125,US
 Greenlots - 112050,1720 15th St,Boulder,CO,80302,40.01521301,-105.2746582,US
 Greenlots - 112107U,"Ivy Avenue & 2nd Street,",Tillamook,OR,97141,45.45706177,-123.8449936,US
@@ -13278,7 +13278,7 @@ IRVINE  CO  OFC,500 Technology,Irvine,CA,92618,33.6742576,-117.7591139,US
 NATIONAL GRID,1 Bridge PLaza,Ogdensburg,NY,13669,44.7183031,-75.4557982,US
 CHOA,1400 Tullie Rd NE,Atlanta,GA,30329,33.831178,-84.332385,US
 Greenlots - 12922,222 Western Ave,Los Angeles,CA,90007,34.07544327,-118.3090744,US
-Greenlots - 12920,1323 Highland Ave,90028,CA,LOS A,34.09514236,-118.3389893,US
+Greenlots - 12920,1323 Highland Ave,Los Angeles,CA,90028,34.09514236,-118.3389893,US
 Greenlots - 12917,7758 W Sunset Blvd,Los Angeles,CA,90046,34.09799957,-118.3589172,US
 Greenlots - 12905,6264 Selma Ave,Los Angeles,CA,90028,34.10006332,-118.3265152,US
 Greenlots - 12915,932 S Flower St,Los Angeles,CA,90015,34.04605484,-118.2614746,US
@@ -13377,7 +13377,7 @@ DC SOLAR,2887 N Green Valley Pkwy,Henderson,NV,89014,36.0711103,-115.0826541,US
 DC SOLAR,6176 S Las Vegas Blvd,Las Vegas,NV,89119,36.0743145,-115.1735751,US
 DC SOLAR,6150 S Las Vegas Blvd,Las Vegas,NV,89119,36.0740539,-115.1730387,US
 MARCO,400 S Collier,Marco Island,FL,34145,25.9286008,-81.7277135,US
-Greenlots - 12919,10984 Santa Monica Blvd,90025,CA,LOS A,34.04846573,-118.4406281,US
+Greenlots - 12919,10984 Santa Monica Blvd,Los Angeles,CA,90025,34.04846573,-118.4406281,US
 Greenlots - 12921,312 W 37th St,Los Angeles,CA,90007,34.01666641,-118.2789536,US
 BLACKRIVER,620 Naches Ave SW,Renton,WA,98057,47.47425,-122.233827,US
 Canyon Pointe North,22213 30th Drive SE,Bothell,WA,98021,47.796905,-122.1947911,US
@@ -21520,7 +21520,7 @@ Greenlots - 182045,1160 Burbank Blvd,North Hollywood,CA,91601,34.18313599,-118.3
 Greenlots - 112475U,5701 Outlets at Tejon Parkway,Arvin,CA,93203,34.985516,-118.942081,US
 Greenlots - 112519U,1001 Golden Rain,Walnut Creek,CA,94595,37.87065887,-122.07444,US
 Greenlots - 112258U,500 W. Middlefield Rd,Mountain View,CA,94043,37.400558,-122.071149,US
-Greenlots - 112229U,1945 Berkeley Way,Berkeley,CA,BERKE,37.87288666,-122.2712784,US
+Greenlots - 112229U,1945 Berkeley Way,Berkeley,CA,94701,37.87288666,-122.2712784,US
 Greenlots - 112518U,1 West Edith Ave,Los Altos,CA,94022,37.38194275,-122.1144562,US
 Greenlots - 112471U,1015 Stanley Dollar Dr.,Walnut Creek,CA,94595,37.86250305,-122.0671158,US
 Greenlots - 112520U,1751 Tice Creek Dr.,Walnut Creek,CA,94595,37.87501907,-122.0771942,US
