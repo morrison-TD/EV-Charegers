@@ -1,5 +1,5 @@
 # import dependencies
-#import psycopg2 as pg
+import psycopg2 as pg
 import pandas as pd
 from sqlalchemy import create_engine
 from bs4 import BeautifulSoup
@@ -40,8 +40,9 @@ engine.table_names()
 
 reg_df.to_sql(name='reg_data', con=engine, if_exists='append', index=True)
 station_df.to_sql(name='station_data', con=engine, if_exists='append', index=True)
-sales_df.to_sql(name='sales_data', con=engine, if_exists='append', index=True)#confirm the registration data has been added to the table
+sales_df.to_sql(name='sales_data', con=engine, if_exists='append', index=True)
 
+#confirm the registration data has been added to the table
 pd.read_sql_query('select * from reg_data', con=engine).head()
 
 #confirm the fuel data has been added to the table
