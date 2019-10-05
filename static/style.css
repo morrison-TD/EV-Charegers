@@ -79,6 +79,7 @@ body {
 /* Adding styles to the aside and filter form */
 .ev-form {
   margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .filters .panel-body {
@@ -131,10 +132,10 @@ select {
 
 .hero h1 {
   position: absolute;
-  margin-top: 200px;
+  margin-top: 400px;
   font-size: 0.1rem;
   animation: title 1.2s forwards linear;
-  color: rgb(214, 10, 10);
+  color: rgb(234, 234, 255);
 
 }
 
