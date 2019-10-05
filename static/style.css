@@ -74,6 +74,7 @@ body {
   width: 35px;
   color: white;
 }
+/* MAp container styling*/
 #map-example-container {height: 300px};
 /* Adding styles to the aside and filter form */
 .ev-form {

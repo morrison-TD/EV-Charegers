@@ -5,7 +5,7 @@ d3.csv("/data/alt_fuel.csv",function(data) {
   });
 
 //algoria code
-
+//l
 
 function placeholder() {
     var placesAutocomplete = places({
