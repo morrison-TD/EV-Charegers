@@ -1,4 +1,4 @@
-Station Name,Street Address,City,State,ZIP,Latitude,Longitude,Country
+station_name,street_address,city,ctate,ZIP,latitude,longitude,country
 City of Sacramento - Capitol Parking Garage,1015 L St,Sacramento,CA,95814,38.5783802,-121.4926,US
 Los Angeles Convention Center,1201 S Figueroa St,Los Angeles,CA,90015,34.04057,-118.268762,US
 LADWP - John Ferraro Building,111 N Hope St,Los Angeles,CA,90012,34.057922,-118.2498,US
