@@ -66,17 +66,17 @@ body {
   color: #1b3146;
 }
 
-/* This CSS styles the ufo icon in the navbar */
-.nav-ufo {
+/* This CSS styles the ev icon in the navbar */
+.nav-ev {
   position: absolute;
   bottom: 5px;
   left: 150px;
   width: 35px;
   color: white;
 }
-
+#map-example-container {height: 300px};
 /* Adding styles to the aside and filter form */
-.ufo-form {
+.ev-form {
   margin-top: 50px;
 }
 
