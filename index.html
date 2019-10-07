@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<!--header-->
+  <head>
+    <meta charset="utf-8">
+    <title>EV Charging Stations</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/superhero/bootstrap.min.css">
+    <link rel="stylesheet" href="https://bootswatch.com/4/lux/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/leaflet/1/leaflet.css">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <link rel="stylesheet" href="static/style.css">
+    <!--Plotly script-->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  </head>
+  
+  <body>
+<<<<<<< HEAD
+<!-- start of nav bar -->
+    <nav class="navbar navbar-default"></nav>
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <ul class="nav nav-tabs">
+            <li class="nav-item">
+              <a class="nav-link active" data-toggle="tab" href="./index.html"><font size = "2" color = "black">Home</font></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="./mission.html"><font size = "2" color = "black">Our Mission</font></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="./time.html"><font size = "2" color = "black">Data</font></a>
+            </li>
+          </ul>
+=======
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="index.html">SUPERCHARGE ME!
+              
+            </a>
+          </div>
+>>>>>>> c130358b0f0b618173b9e4d5b361937f68a203b5
+        </div>
+      </div>
+    </nav>
+<!-- end of nav bar -->
+
+<!--start hero text-->
+
+    <div class="hero text-center">
+      <h1>Electric vehicle Charging Stations</h1>
+    </div>
+<<<<<<< HEAD
+<!--End Hero text-->
+
+<!--Query Boxes-->
+=======
+<!--Query Boxes
+>>>>>>> c130358b0f0b618173b9e4d5b361937f68a203b5
+   <div class="container">
+      <div class="row margin-top-50">
+        <div class="col-md-2">
+          <aside class="filters">
+            <div class="panel panel-default">
+              <div class="panel-heading">Filter Search</div>
+                <div class="panel-body">
+                 <!-- <form > -->
+                  <div class="form-group">
+                    <ul class="list-group" id="filters">
+                      <li class="filter list-group-item">
+                        <label for="zip"> Zipcode:</label>
+                        <input class="form-control" id="zipcode" type="text" placeholder="Zipcode">
+        <!--Selector OR INPUT-->
+                          <!-- <select onchange="mydateFunction()" id="zipcode-filter" > -->
+                            <!-- <option value="" hidden >Select a Zipcode</option> -->
+                            <!-- </select> -->
+                      </li>
+                      <li class="filter list-group-item">
+                        <label for="city">City:</label>
+                          <!-- <select onchange="mycityFunction()" id="city-filter" > -->
+              <!--Selector/Input-->
+                        <input class="form-control" id="city" type="text" placeholder="City">
+                            <!-- <option value="" hidden > Select a City </option>
+                            <option id="add options" hidden value="" ></option>
+                              </select> -->
+                      </li>
+                    </ul>
+                  </div>
+                </form>
+                <button id="filter-btn" type="button" class="btn btn-default">Filter</button>
+
+              </div>
+            </div>
+          </aside>
+<<<<<<< HEAD
+        </div>
+<!--Map-->       
+              <!-- <div id="map-example-container"></div> -->
+              <div id="map-example-container" style="width:700px;height:300px;">
+                  
+              </div>
+        </div>
+      </div>
+    </div>
+<!--Query/Map Container End-->
+
+<!--Table-->
+    <div class="col-md-8">
+        <div id="table-area" class="">
+          <table id="EV-table" class="table table-striped">
+            <thead style="text-align:center;">
+              <th class="table-head">FIND A CHARGING STATION NEAR YOU</th>
+                <tr >
+              <th class="table-head">City</th>
+                <th class="table-head">State</th>
+                <th class="table-head">Location</th>
+                <th class="table-head">Address</th>
+                <th class="table-head">ZipCode</th>
+                <th class="table-head">Latitude</th>
+                <th class="table-head">Longitude</th>
+                <th class="table-head">Country</th>
+                </tr>
+            </thead>
+            <tbody id="Tableid" style="text-align:center;"></tbody> 
+          </table>
+        </div>
+    </div>
+<!--Table End-->
+
+<!--Footer-->
+    <div>
+      <footer class="footer">
+        <span class="bottom">Electric vehicle Timeline</span>
+      </footer>
+    </div>
+
+   <!-- D3 -->
+=======
+        </div>-->
+        <div class="col-md-10">
+          <div id="table-area" class="">
+            <table id="EV-table" class="table table-striped">
+              <thead style="text-align:center;">
+                <tr >
+                  <th class="table-head">FIND A CHARGING STATION NEAR YOU</th>
+                
+                </tr>
+              </thead>
+             
+              <!--Map container-->
+            </table>
+          </div>
+
+              <div id="map-example-container"></div>
+                <input type="search" id="input-map" class="form-control" placeholder="Where are we going?" />
+        </div>
+      
+  <!-- D3 -->
+>>>>>>> c130358b0f0b618173b9e4d5b361937f68a203b5
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.5.0/d3.min.js"></script>
+
+   <!-- MomentJS -->
+   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.15.1/moment.min.js"></script>
+  
+   <!-- Leaflet JavaScript -->
+   <script src="https://cdn.jsdelivr.net/leaflet/1/leaflet.js"></script>
+   <script src="https://unpkg.com/leaflet@1.3.3/dist/leaflet.js"
+   integrity="sha512-tAGcCfR4Sc5ZP5ZoVz0quoZDYX5aCtEm/eu1KhSLj2c9eFrylXZknQYmxUssFaVJKvvc0dJQixhGjG2yXWiV9Q=="
+   crossorigin=""></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
+
+  <!--Leaflet Script-->
+  <script src="https://unpkg.com/leaflet@1.0.0-rc.3/dist/leaflet.js"></script>
+  
+  <!--Data scripts-->
+ <script src="static/js/data.js"></script> 
+  <script src="static/js/app.js"></script> 
+</body>
+
+</html>
