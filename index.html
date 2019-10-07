@@ -50,25 +50,22 @@
             <div class="panel panel-default">
               <div class="panel-heading">Filter Search</div>
                 <div class="panel-body">
-                 <form >
+                 <!-- <form > -->
                   <div class="form-group">
                     <ul class="list-group" id="filters">
-
-                      Choose a Zipcode
                       <li class="filter list-group-item">
                         <label for="zip"> Zipcode:</label>
-                        <input class="form-control" id="zipcode-input" type="text" placeholder="Zipcode">
+                        <input class="form-control" id="zipcode" type="text" placeholder="Zipcode">
         <!--Selector OR INPUT-->
                           <!-- <select onchange="mydateFunction()" id="zipcode-filter" > -->
                             <!-- <option value="" hidden >Select a Zipcode</option> -->
                             <!-- </select> -->
                       </li>
-                       choose a city 
                       <li class="filter list-group-item">
-                        <label for="city">Choose a City:</label>
+                        <label for="city">City:</label>
                           <!-- <select onchange="mycityFunction()" id="city-filter" > -->
               <!--Selector/Input-->
-                        <input class="form-control" id="city-input" type="text" placeholder="City">
+                        <input class="form-control" id="city" type="text" placeholder="City">
                             <!-- <option value="" hidden > Select a City </option>
                             <option id="add options" hidden value="" ></option>
                               </select> -->
@@ -85,16 +82,15 @@
 <!--Map-->       
               <!-- <div id="map-example-container"></div> -->
               <div id="map-example-container" style="width:700px;height:300px;">
-                <input type="search" id="input-map" class="form-control" placeholder="Find a charging station near you" />
-                <button id="filter-btn" type="button" class="btn btn-default">Search</button>
-
+                  
+              </div>
         </div>
       </div>
     </div>
 <!--Query/Map Container End-->
 
 <!--Table-->
-    <div class="col-md-10">
+    <div class="col-md-8">
         <div id="table-area" class="">
           <table id="EV-table" class="table table-striped">
             <thead style="text-align:center;">
@@ -105,9 +101,12 @@
                 <th class="table-head">Location</th>
                 <th class="table-head">Address</th>
                 <th class="table-head">ZipCode</th>
+                <th class="table-head">Latitude</th>
+                <th class="table-head">Longitude</th>
+                <th class="table-head">Country</th>
                 </tr>
             </thead>
-            <tbody style="text-align:center;"></tbody> 
+            <tbody id="Tableid" style="text-align:center;"></tbody> 
           </table>
         </div>
     </div>
@@ -133,8 +132,6 @@
    crossorigin=""></script>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
-  <!--algolia script-->
-  <script src="https://cdn.jsdelivr.net/npm/places.js@1.16.5"></script>
 
   <!--Leaflet Script-->
   <script src="https://unpkg.com/leaflet@1.0.0-rc.3/dist/leaflet.js"></script>
