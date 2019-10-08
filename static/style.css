@@ -136,20 +136,17 @@ select {
   outline: none;
 }
 
-
-
-
-table.dataTable thead .sorting:after,
-table.dataTable thead .sorting:before,
-table.dataTable thead .sorting_asc:after,
-table.dataTable thead .sorting_asc:before,
-table.dataTable thead .sorting_asc_disabled:after,
-table.dataTable thead .sorting_asc_disabled:before,
-table.dataTable thead .sorting_desc:after,
-table.dataTable thead .sorting_desc:before,
-table.dataTable thead .sorting_desc_disabled:after,
-table.dataTable thead .sorting_desc_disabled:before {
-bottom: .5em;
+table#EV-Table thead .sorting:after,
+table#EV-Table thead .sorting:before,
+table#EV-Table thead .sorting_asc:after,
+table#EV-Table thead .sorting_asc:before,
+table#EV-Table thead .sorting_asc_disabled:after,
+table#EV-Table thead .sorting_asc_disabled:before,
+table#EV-Table thead .sorting_desc:after,
+table#EV-Table thead .sorting_desc:before,
+table#EV-Table thead .sorting_desc_disabled:after,
+table#EV-Table thead .sorting_desc_disabled:before {
+  bottom: .5em;
 }
  
 .loader {
@@ -160,16 +157,7 @@ bottom: .5em;
   margin-top: 50px;
 }
 
-/* .table th {
-  vertical-align: bottom;
-  border-bottom: 2px solid #4e5d6c;
-  font-size: 3rem;
-}
 
-th {
-font-size: 2.765625rem;
-text-transform: uppercase;
-} */
 
 /* input placeholder color changes */
 .form-control::-webkit-input-placeholder {
