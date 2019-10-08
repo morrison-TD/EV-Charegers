@@ -1,5 +1,5 @@
 # import dependencies
-import psycopg2 as pg
+#import psycopg2 as pg
 import pandas as pd
 from sqlalchemy import create_engine
 from bs4 import BeautifulSoup
@@ -17,17 +17,17 @@ pw = "postgres"
 # make the evData in your postgres
 
 #import the registration data csv
-reg_file = "data/reg_data.csv"
+reg_file = "../reg_data.csv"
 reg_df = pd.read_csv(reg_file, encoding ="ISO-8859-1")
 reg_df.head()
 
 #import the station data csv
-station_file = "data/station_data.csv"
+station_file = "../station_data.csv"
 station_df = pd.read_csv(station_file, encoding ="ISO-8859-1")
 station_df.head()
 
 #import the sales data csv
-sales_file = "data/sales_data.csv"
+sales_file = "../sales_data.csv"
 sales_df = pd.read_csv(sales_file, encoding ="ISO-8859-1")
 sales_df.head()
 
