@@ -54,7 +54,14 @@ d3.json("/data/station_data.json", function(data) {
         cell.text(val);
     });
   });
-}
+} 
+  // (document).ready(function () {
+  // ('#EV-table').DataTable({
+  // "scrollX": true,
+  // "scrollY": 200,
+  // });
+  // ('.dataTables_length').addClass('bs-select');
+  // });
 
 // Keep Track of all filters
 var filters = {};
@@ -76,7 +83,7 @@ function updateFilters() {
   }
 
   // Call function to apply all filters and rebuild the table
-  filterTable();
+  // filterTable();
 
 }
 
@@ -100,7 +107,7 @@ d3.selectAll(".filter").on("change", updateFilters);
 
 // Build the table when the page loads
 buildTable(tableData)
-console.log(tableData);
+// console.log(tableData);
 
 })
 // //interactive map

@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  font-family: Ubuntu, sans-serif;
+  font-family: Ubuntu, -webkit-body;
 }
 
 html,
@@ -36,34 +36,27 @@ body {
   overflow: auto;
 }
 
-/* The footer is positioned at the bottom of the page */
-.footer {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  min-height: 100px;
-  background: #4e5d6c;
-}
-
-/* The code styles the text at the bottom of the footer */
-.footer > .bottom {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  padding: 5px;
-  background: #1b3146;
-}
-
 .navbar {
   padding: 5px;
   margin: 0;
-  color: #1b3146;
+  color: #c0a81e;
 }
 
 .nav-item {
   color: #1b3146;
+}
+.navbar-brand {
+  display: inline-block;
+  padding-top: 0.3359375rem;
+  padding-bottom: 0.3359375rem;
+  margin-right: 3rem;
+  font-size: 2.09375rem;
+  line-height: inherit;
+  white-space: nowrap;
+}
+.nav-tabs {
+  border-bottom: 1px solid #ddda13;
+  background-color: chocolate;
 }
 
 /* This CSS styles the ev icon in the navbar */
@@ -72,8 +65,40 @@ body {
   bottom: 5px;
   left: 150px;
   width: 35px;
-  color: white;
+  
 }
+
+/* hero text */
+/* The styles for the parallax */
+.hero {
+  position: relative;
+  height: 550px;
+  padding: 20px;
+  margin: 0;
+  background: black;
+  background-image: url("images/tesla.png");
+  background-attachment: fixed;
+  background-position: bottom center;
+  background-size: cover;
+  font-size: 30%
+}
+
+.hero h1 {
+  position: absolute;
+  margin-top: 250px;
+  font-size: 0.1rem;
+  animation: title 1.2s forwards linear;
+  color: rgb(255, 248, 234);
+
+}
+
+.hero p {
+  font-size: 2rem;
+  opacity: 0;
+  animation: subtitle 1.2s forwards linear;
+  animation-delay: 1.2s;
+}
+
 /* MAp container styling*/
 #map-example-container {height: 300px};
 /* Adding styles to the aside and filter form */
@@ -81,7 +106,20 @@ body {
   margin-top: 50px;
   margin-bottom: 50px;
 }
-
+.form-control {
+  display: block;
+  width: 100%;
+  height: calc(1.5em + 1.5rem + 0px);
+  padding: 0.75rem 1.5rem;
+  font-size: 1.875rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color:#0b55a0 ;
+  background-color: #f9f7f7;
+  background-clip: padding-box;
+  border: 0px solid #ced4da;
+  border-radius: 0;
+}
 .filters .panel-body {
   padding: 0;
 }
@@ -97,9 +135,10 @@ select {
   color: #8e979f;
   outline: none;
 }
-
+/* table area */
 #table-area th {
   text-align: center;
+  font-size: 20 px;
 }
 
 #table-area th:first-child,
@@ -107,7 +146,28 @@ select {
 #table-area th:nth-child(6) {
   min-width: 70px;
 }
+/*scroll table*/
+.EV-tableWrapper {
+  max-width: 600px;
+  margin: 0 auto;
+  }
+  #EV-tableExample th, td {
+  white-space: nowrap;
+  }
 
+  /* table.dataTable thead .sorting:after,
+  table.dataTable thead .sorting:before,
+  table.dataTable thead .sorting_asc:after,
+  table.dataTable thead .sorting_asc:before,
+  table.dataTable thead .sorting_asc_disabled:after,
+  table.dataTable thead .sorting_asc_disabled:before,
+  table.dataTable thead .sorting_desc:after,
+  table.dataTable thead .sorting_desc:before,
+  table.dataTable thead .sorting_desc_disabled:after,
+  table.dataTable thead .sorting_desc_disabled:before {
+  bottom: .5em;
+  } */
+ 
 .loader {
   margin-top: 50px;
 }
@@ -116,34 +176,15 @@ select {
   margin-top: 50px;
 }
 
-/* The styles for the parallax */
-.hero {
-  position: relative;
-  height: 550px;
-  padding: 20px;
-  margin: 0;
-  background: black;
-  background-image: url("images/tesla.png");
-  background-attachment: fixed;
-  background-position: bottom center;
-  background-size: cover;
-  font-size: 40%
+.table th {
+  vertical-align: bottom;
+  border-bottom: 2px solid #4e5d6c;
+  font-size: 3rem;
 }
 
-.hero h1 {
-  position: absolute;
-  margin-top: 400px;
-  font-size: 0.1rem;
-  animation: title 1.2s forwards linear;
-  color: rgb(234, 234, 255);
-
-}
-
-.hero p {
-  font-size: 2rem;
-  opacity: 0;
-  animation: subtitle 1.2s forwards linear;
-  animation-delay: 1.2s;
+th {
+font-size: 2.765625rem;
+text-transform: uppercase;
 }
 
 /* input placeholder color changes */
@@ -188,7 +229,6 @@ select {
   #table-area tr td:last-child {
     margin-bottom: 20px;
   }
-
   #table-area tr td:last-child::after {
     display: block;
     width: 100%;
@@ -196,10 +236,11 @@ select {
     margin-top: 20px;
     content: " ";
     background: aliceblue;
+    font-size: 3rem;
   }
 
   #table-area td {
-    font-size: 1.25em;
+    font-size: 2em;
   }
 
   #table-area tbody td {
@@ -209,7 +250,7 @@ select {
 
   #table-area tbody td::before {
     display: block;
-    font-size: 1.4em;
+    font-size: 3.3rem;
     font-weight: bold;
     text-align: center;
     content: attr(data-th);
