@@ -11,20 +11,21 @@ Plotly.d3.csv("/data/station_data.csv",
         map = document.getElementById('map-example-container');
 		var data = [
 			{
-				type: "scattermapbox",
-                text: unpack(rows, "City"),
-                text: unpack(rows, "Station_Name"),
-				        lon: unpack(rows, "Longitude"),
+		type: "densitymapbox",
+		lon: unpack(rows, "Longitude"),
                 lat: unpack(rows, "Latitude"),
-                zip: unpack(rows, "ZIP"),
-				marker: { color: "multi", size: 4 }
+                z: unpack(rows, "State"),
+		coloraxis: 'coloraxis',
+		radius:5
 			}
 		];
 
 		var layout = {
 			dragmode: "zoom",
 			mapbox: { style: "open-street-map", center: { lat: 38, lon: -95 }, zoom: 3 },
-			margin: { r: 0, t: 0, b: 0, l: 0 }
+			title={text: "Electric Charging Stations Density"},
+		    	coloraxis: {colorscale: "Viridis"},
+			margin: { r: 0, t: 30, b: 0, l: 0 }
 		};
 
 		Plotly.newPlot(map, data, layout);
