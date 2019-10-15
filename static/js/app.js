@@ -23,7 +23,7 @@ Plotly.d3.csv("/data/station_data.csv",
 		var layout = {
 			dragmode: "zoom",
 			mapbox: { style: "open-street-map", center: { lat: 38, lon: -95 }, zoom: 3 },
-			title={text: "Electric Charging Stations Density"},
+			title:{text: "Electric Charging Stations Density"},
 		    	coloraxis: {colorscale: "Viridis"},
 			margin: { r: 0, t: 30, b: 0, l: 0 }
 		};
