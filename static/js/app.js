@@ -13,9 +13,12 @@ Plotly.d3.csv("/data/station_data.csv",
 			{
 		type: "densitymapbox",
 		lon: unpack(rows, "Longitude"),
-                lat: unpack(rows, "Latitude"),
-                z: unpack(rows, "State"),
-		coloraxis: 'coloraxis',
+    lat: unpack(rows, "Latitude"),
+    // z: unpack(rows, "ZIP"),
+    zmin: 10,
+    zmax:250,
+    coloraxis: 'coloraxis',
+    hoverinfo: 'skip',
 		radius:5
 			}
 		];
@@ -24,7 +27,7 @@ Plotly.d3.csv("/data/station_data.csv",
 			dragmode: "zoom",
 			mapbox: { style: "open-street-map", center: { lat: 38, lon: -95 }, zoom: 3 },
 			title:{text: "Electric Charging Stations Density"},
-		    	coloraxis: {colorscale: "Viridis"},
+		  coloraxis: {colorscale: "Viridis"},
 			margin: { r: 0, t: 30, b: 0, l: 0 }
 		};
 
@@ -33,8 +36,9 @@ Plotly.d3.csv("/data/station_data.csv",
 
 d3.json("/data/station_data.json", function(data) {
   
+  var tableData =data;
   
-  //console.log(tableData)
+  //  console.log(tableData)
   // get table references
   var tbody = d3.select("tbody");
 
@@ -53,6 +57,7 @@ d3.json("/data/station_data.json", function(data) {
       Object.values(dataRow).forEach((val) => {
         var cell = row.append("td");
         cell.text(val);
+
     });
   });
   
