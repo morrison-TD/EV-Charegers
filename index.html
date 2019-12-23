@@ -5,22 +5,23 @@
     <meta charset="utf-8">
     <title>EV Charging Stations</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
     <!-- JQuery -->
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/superhero/bootstrap.min.css">
-    
+   
     <!--Plotly script-->
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
     
     <!-- CSS scripts -->
+
     <link rel="stylesheet" href="https://bootswatch.com/4/lux/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/leaflet/1/leaflet.css">
     <link rel="stylesheet" href="static/style.css">
     <link rel="stylesheet" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css">
-   
+    
     <!-- Fonts scripts -->
     <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
     
@@ -37,10 +38,10 @@
               <a class="nav-link active" data-toggle="tab" href="./index.html"><font size = "2" color = "black">Home</font></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" data-toggle="tab" href="#MissionWrapper"><font size = "2" color = "black">Our Mission</font></a>
+              <a class="nav-link" data-toggle="tab" href="./mission.html"><font size = "2" color = "black">Our Mission</font></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" data-toggle="tab" href="#DataContainer"><font size = "2" color = "black">Data</font></a>
+              <a class="nav-link" data-toggle="tab" href="./time.html"><font size = "2" color = "black">Data</font></a>
             </li>
           </ul>
         </div>
@@ -55,103 +56,31 @@
     </div>
 <!--End Hero text-->
 
-<!-- Mission-->
-    <div class="container">
-      <div id="MissionWrapper"> 
-        <div class="row">
-          <div class="col-md-12 jumbotron text-center"> 
-            <h4>Mission</h4>
-              <p> <font size="4" >Gas stations outnumber public charging stations by around seven to one. 
-              This causes many to question the practicality of driving an electric car.
-              Studies show that consumers are more likely to buy an electric car when they 
-              see nearby stations in town. The insufficient amount of charging stations 
-              is a real concern that is deterring some consumers from going all-electric.
-              Access to efficient charging is now a roadblock to electric-vehicle uptake.
-              The problem being the charging infrastructure lacks a viable business model 
-              and the plan to radically expand the number of available charging stations
-              depends on exponential growth in the sale of EVs. We have gathered data
-              to show that despite many roadblocks EV sales have increased dramatically and will 
-              continue to do so in the coming years. Going electric is not just an eco-friendly goal.
-              It's a business reality, and a major transition in the industry. It is the Future.
-              </font></p>
-          </div>
-        </div>
-      </div>
-    </div>
-<!--End Mission-->
-
-<!--Scatter Plot-->
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-12  col-md-9">
-          <div id="scatter">
-          </div>
-        </div>
-      </div>
-    </div>
-
-<!--End Scatter -->
-
-<!--Data-->
-
-    <div class="DataContainer">
-      <div class="row">
-        <div class="col-md-12 jumbotron text-center">
-          <h4>Electric-vehicle infrastructure Demand</h4>
-              <p><font size="4">The number of Electric Vechiles on US roads will increase enormously in the next few years.
-              Some places are more prepared for this coming change than others.
-              Below we have mapped out the current Electric Vechile charging stations, 
-              Electric Vechile registration and sales over time  to better inform 
-              public and private entites of the current infrastructure. <br>
-            </font></p> 
-        </div>
-      </div>
-    </div>
-<!--data sets-->
-    <div class="col-md-10">
-      <div id="table" class="">
-          <table id="Gov-table" class="table table-striped">
-            <thead style="text-align:center;">
-              <tr >
-                <!-- <th class="table-head">FIND A CHARGING STATION NEAR YOU</th> -->
-                <h2><iframe style="width: 900px; height: 590px;" src="https://www.afdc.energy.gov/data/widgets/10366" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe></h2>
-                <h2><iframe style="width: 900px; height: 400px;" src="https://www.afdc.energy.gov/data/widgets/10567" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe></h2>
-                <h2><iframe style="width: 900px; height: 400px;" src="https://www.afdc.energy.gov/data/widgets/10962" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe></h2>
-                <h2><iframe style="width: 900px; height: 400px;" src="https://www.afdc.energy.gov/data/widgets/10332" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe></h2>
-              </tr>
-            </thead>
-            <tbody style="text-align:center;"></tbody> 
-          </table>
-        </div>
-      </div>
-<!--Data-->
 
 <!--Map-->   
-      <div>
-        <div>
-          <div class="container">
-            <div id="MapWrapper" class="mapWrapper dt-bootstrap-4"> 
-              <div class="row">
-                <div class="col-md-12">           
-                  <div class= "text-center" id="map-example-container" style="width:750px;height:400px;">
-                  </div>
-                </div>
-              </div>
+    <div class="container">
+      <div id="MapWrapper" class="mapWrapper dt-bootstrap-4"> 
+        <div class="row">
+          <div class="col-md-12">           
+            <div class= "text-center" id="map-example-container" style="width:750px;height:350px;">
             </div>
           </div>
         </div>
       </div>
+    </div>
+   
 <!--Query/Map Container End-->
 
 <!--Search Field-->
-    <div>
-      <div id="SearchWrapper" class="dataWrapper dt-bootstrap-4">
-        <div class="row">
+    <div id="SearchWrapper" class="dataWrapper dt-bootstrap-4">
+      <div class="row">
+          <div class="col-sm-12 col-md-6">
             <div class="col-sm-12 col-md-6">
-              <div class="col-sm-12 col-md-6">
-                <div id="VerticalScroll" class="dateTable_filter">
-                  
-                </div>
+              <div id="VerticalScroll" class="dateTable_filter">
+                <!-- <label>
+                  Search:
+                  <input class="form-control form-control-sm"  type="text" placeholder="City/ZIP" >
+                </label> -->
               </div>
             </div>
           </div>
@@ -197,13 +126,13 @@
 
   
     <!-- D3 -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.5.0/d3.min.js"></script>
-  <!-- Jquery -->
-    <script src="static/js/scripts.js"></script>
-    <script src="static/js/app.js"></script> 
-    <!-- <script src="static/js/data.js"></script> 
-     -->
-  
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.5.0/d3.min.js"></script>
+<!-- Jquery -->
+  <script src="static/js/scripts.js"></script>
+  <script src="static/js/data.js"></script> 
+  <script src="static/js/app.js"></script> 
+   <!-- MomentJS -->
+   <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.15.1/moment.min.js"></script> -->
   
    <!-- Leaflet JavaScript -->
    <script src="https://cdn.jsdelivr.net/leaflet/1/leaflet.js"></script>
@@ -212,10 +141,10 @@
    crossorigin=""></script>
    <script src="https://unpkg.com/leaflet@1.0.0-rc.3/dist/leaflet.js"></script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
   
-    <!--Data scripts-->
+  <!--Data scripts-->
 
-  </body>
+</body>
 
 </html>

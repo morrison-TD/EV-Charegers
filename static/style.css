@@ -14,6 +14,17 @@ body {
   margin: 0; padding: 0;
 }
 
+.video-container {
+    background: #edeae8;
+    position: relative;
+    overflow: hidden;
+}
+
+.video-container iframe {
+  position: absolute;
+  top:0;
+  left: 0;
+}
 
 
 
@@ -89,7 +100,7 @@ body {
 }
 
 /* MAp container styling*/
-/* #map-example-container {height: 300px}; */
+#map-example-container {height: 300px};
 /* Adding styles to the aside and filter form */
 .ev-form {
   margin-top: 50px;
